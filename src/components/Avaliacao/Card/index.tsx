@@ -65,11 +65,11 @@ function Card({ profissional }: { profissional: IProfissional }) {
                     <ParagrafoEstilizado>{profissional.especialidade}</ParagrafoEstilizado>
                 </ItemInformacoesEstilizado>
                 <ItemEstilizado>
-                    <Rating
+                    {/* <Rating
                         name="simple-controlled"
                         value={profissional.nota}
                         readOnly={true}
-                    />
+                    /> */}
                 </ItemEstilizado>
             </ListaEstilizada>
         </ContainerEstilizado>
