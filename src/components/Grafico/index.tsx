@@ -5,7 +5,7 @@ import { YAxis } from "recharts";
 import { BarChart } from "recharts";
 import styled from "styled-components";
 import IConsulta from "../../types/IConsulta";
-import IProfissional from "../../types/IProfissional";
+import {IProfissional} from "../../types/IProfissional";
 import useDadosGrafico from "./useDadosGrafico";
 
 interface Props {

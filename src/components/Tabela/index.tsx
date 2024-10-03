@@ -49,11 +49,11 @@ function Tabela({ consultas }: { consultas: IConsulta[] | null }) {
                             return (
                                 <LinhaEstilizada>
                                     <CelulaEstilizada component="th" scope="row">{new Date(linha.data).toLocaleDateString()}</CelulaEstilizada>
-                                    <CelulaEstilizada>{linha.horario}</CelulaEstilizada>
-                                    <CelulaEstilizada>{linha.profissional[0].nome}</CelulaEstilizada>
-                                    <CelulaEstilizada>{linha.profissional[0].especialidade}</CelulaEstilizada>
-                                    <CelulaEstilizada>{linha.paciente}</CelulaEstilizada>
-                                    <CelulaEstilizada>{linha.modalidade}</CelulaEstilizada>
+                                    <CelulaEstilizada>{linha?.data}</CelulaEstilizada>
+                                    <CelulaEstilizada>{linha?.especialista.nome}</CelulaEstilizada>
+                                    <CelulaEstilizada>{linha?.especialista.especialidade}</CelulaEstilizada>
+                                    <CelulaEstilizada>{linha?.paciente.nome}</CelulaEstilizada>
+                                    <CelulaEstilizada>{linha?.paciente.possuiPlanoSaude ? "Convênio" : "Particular"}</CelulaEstilizada>
                                 </LinhaEstilizada>
                             )
                         })}

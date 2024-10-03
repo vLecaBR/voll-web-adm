@@ -1,7 +1,9 @@
-export default interface IProfissional {
-    id: number,
-    imagem: string,
+export interface IProfissional {
     nome: string,
-    especialidade: string,
-    nota: number
+    imagem: string,
+    especialidade: string
 }
+
+
+
+	
